@@ -1,0 +1,123 @@
+
+.category_layout {
+    width: 1200px;
+    margin: auto;
+    
+}
+.category_layout>header{
+    background-color: brown;
+    height: 80px;
+}
+.category_layout>main{
+    display: flex;
+    min-height: 460px;
+    margin-top: 5px;
+    
+}
+.category_layout>main>#cottrai{
+    background-color: #f8f9fa;
+    width: 20%;
+}
+.category_layout>main>#cotphai{
+    background-color: #fff;
+    width: 80%;
+
+}
+.category_layout>footer{
+    background-color: #fff;
+    height: 50px;
+    padding-top: 1px;
+    margin-top: 5px;
+}
+
+/* cot trai */
+
+
+#accordion>.cap  { 
+    background: lightseagreen; padding: 8px 10px;
+    font-weight: bold; text-transform: uppercase; 
+    cursor: pointer; color: white;font-size: 18px;
+}
+#accordion > .ct > label {
+    margin: 8px 0 8px 30px;
+    font-size: 18px; 
+    display: block; 
+    cursor: pointer; 
+}
+#accordion > .ct input { width: 16px; height: 16px; margin-right: 10px;}
+
+/* cot phai */
+.khungsanpham
+        {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+        }
+        
+        .sanpham
+        {
+            width: 200px;
+            height: 300px;
+            padding: 15px;
+            cursor: pointer;
+            border: 1px solid #ddd;
+             
+        }
+        
+        .sanpham img
+        {
+            width: 100%;
+        }
+        .sanpham:hover
+        {
+            box-shadow: 3px 3px 3px  #ddd;
+        }
+        .mota_sanpham{            
+            list-style-type: none;
+            text-align: center;
+        }
+        .mota_sanpham b:hover{
+            color: red;
+            transition: color 0.3s;
+        }
+        .tensp{
+            width: 200px;
+            height: 70px;
+            border: 1px solid transparent;
+            background-color: rgb(255, 255, 255);
+            
+        }
+        .container h1{
+            display: flex;
+
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            background-color: #4c534d; 
+            color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 5px;
+            transition: background-color 0.3s ease; 
+        }
+
+        .button:hover {
+            background-color: #f69c4e; 
+        }
+        .tab{
+            text-align: center;
+            background-color: #b4733b;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .tab-name{
+            margin-right: 12px;
+        }

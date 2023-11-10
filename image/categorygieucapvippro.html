@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="csssieupcapvippro.css">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div class="category_layout">
+        <header><h1>phần khung trên</h1></header>
+        <main class="main">
+            <div id="cottrai">
+                <div id="accordion">
+                    <div class="cap">Thương hiệu</div>
+                    <div class="ct" > 
+                        <label><input onchange="chonLap" type="checkbox" class="thuonghieu" value="Asus">Asus</label>
+                        <label><input onchange="chonLap" type="checkbox" class="thuonghieu" value="Acer">Acer</label>
+                        <label><input onchange="chonLap" type="checkbox" class="thuonghieu" value="Lenovo">Lenovo</label>
+                        <label><input onchange="chonLap" type="checkbox" class="thuonghieu" value="Msi">Msi</label>
+                        <label><input onchange="chonLap" type="checkbox" class="thuonghieu" value="Hp">Hp</label>
+                    </div>
+                    <div class="cap">Giá bán</div>
+                    <div class="ct"> 
+                        <label><input type="checkbox" class="giaban" value="1">Dưới 10 triệu</label>
+                        <label><input type="checkbox" class="giaban" value="2">Từ 10 đến 15 triệu</label>
+                        <label><input type="checkbox" class="giaban" value="3">Từ 15 đến 20 triệu</label>
+                        <label><input type="checkbox" class="giaban" value="4">Trên 20 triệu</label>
+                    </div>
+                    <div class="cap">Màn hình</div>
+                    <div class="ct"> 
+                        <label><input type="checkbox" class="manhinh" value="1">khoảng 14 inch</label>
+                        <label><input type="checkbox" class="manhinh" value="2"> 15 inch trở lên</label>
+                    </div>
+                    </div> 
+            </div>
+            <div id="cotphai">
+                <div class="list-sp">
+                    
+                </div>
+            </div>
+        </main>
+        <footer>
+            thông tin shop
+        </footer>
+    </div>
+</body>
+</html>
+
+<script>
+    var arrLap =[
+
+    {
+        tenLap: 'Laptop Asus Vivobook E1404FA-NK186W R5 7520U/16GB/512GB/14" FHD/Win11',
+        giacu: '14.990.000đ',
+        giamoi: '13.490.000đ',
+        hinh:'img/asus-1.webp',
+        thuonghieu:'Asus',
+        manhinh:"14"
+    },
+    {
+        tenLap: 'Laptop Asus Vivobook Flip TN3402YA-LZ188W R5-7530U/16GB/512GB/14" Touch/Win11',
+        giacu: '18.990.000₫',
+        giamoi: '16.690.000₫',
+        hinh:'img/asus-2.webp',
+        thuonghieu:'Asus',
+        manhinh:"14"
+    },
+    {
+        tenLap: 'Laptop Asus TUF Gaming FX506HF-HN017W i5 11400H/16GB/512GB/GeForce RTX 2050 4GB/Win11',
+        giacu: '20.990.000₫',
+        giamoi: '17.990.000₫',
+        hinh:'img/asus-3.webp',
+        thuonghieu:'Asus',
+        manhinh:"15.6"
+    },
+    {
+        tenLap: 'Laptop Asus TUF Gaming FX506HC-HN144W i5 11400H/8GB/512GB/15.6"FHD/GeForce RTX 3050 4GB/Win 11',
+        giacu: '21.990.000₫',
+        giamoi: '18.290.000₫',
+        hinh:'img/asus-4.webp',
+        thuonghieu:'Asus',
+        manhinh:"15.6"
+    },
+    {
+        tenLap: 'Laptop Asus Vivobook X415EA-EK1387W i3 1115G4/8GB/256GB/14" FHD/Win 11',
+        giacu: '10.990.000₫',
+        giamoi: '8.990.000₫',
+        hinh:'img/asus-1.webp',
+        thuonghieu:'Asus',
+        manhinh:"14"
+    },
+    {
+        tenLap: 'Laptop Acer Swift 3 SF314-43-R4X3 R5 5500U/16GB/512GB SSD/Win11',
+        giacu: '20.990.000₫',
+        giamoi: '14.990.000₫',
+        hinh:'img/acer-1.webp',
+        thuonghieu:'Acer',
+        manhinh:"14"
+    },
+    {
+        tenLap: 'Laptop Acer Nitro 5 Gaming AN515-57-53F9 i5 11400H/8GB/512GB/15.6"FHD/Nvidia RTX 3050 4GB/Win11',
+        giacu: '25.990.000₫',
+        giamoi: '19.990.000₫',
+        hinh:'img/acer-2.webp',
+        thuonghieu:'Acer',
+        manhinh:"15.6"
+    },
+    {
+        tenLap: 'Laptop Acer Aspire 7 Gaming A715-76-57CY i5 12450H/8G/512G/15.6"FHD/Win11',
+        giacu: '16.990.000₫',
+        giamoi: '13.990.000₫',
+        hinh:'img/acer-3.webp',
+        thuonghieu:'Acer',
+        manhinh:"15.6"
+    },
+    {
+        tenLap: 'Laptop Acer Aspire 7 Gaming A715-43G-R09Q R5 5625U/16GB/512GB/15.6"FHD/NVIDIA RTX3050/Win11',
+        giacu: '19.490.000₫',
+        giamoi: '17.490.000₫',
+        hinh:'img/acer-4.webp',
+        thuonghieu:'Acer',
+        manhinh:"15.6"
+    },
+    {
+        tenLap: 'Laptop Acer Nitro 5 Tiger Gaming AN515-58-52SP i5 12500H/8GB/512GB SSD/GeForce RTX 3050 4GB/Win11',
+        giacu: '27.990.000₫',
+        giamoi: '22.990.000₫',
+        hinh:'img/acer-5.webp',
+        thuonghieu:'Acer',
+        manhinh:"15.6"
+    },
+    {
+        tenLap: 'Laptop Lenovo IdeaPad 3 15ITL6 i5 1155G7/16GB/512GB/15.6"FHD/Win11',
+        giacu: '15.290.000₫',
+        giamoi: '13.490.000₫',
+        hinh:'img/lenovo-1.webp',
+        thuonghieu:'Lenovo',
+        manhinh:"15.6"
+    },
+    {
+        tenLap: 'Laptop Lenovo IdeaPad 1 15AMN7 R5 7520U/8GB/512GB/15.6"FHD/Win 11',
+        giacu: '13.490.000₫',
+        giamoi: '9.990.000₫',
+        hinh:'img/lenovo-2.webp',
+        thuonghieu:'Lenovo',
+        manhinh:"15.6"
+    },
+    {
+        tenLap: 'Laptop Lenovo IdeaPad 3 14IAH8 i5 12450H/16GB/512GB/14"FHD/Win11',
+        giacu: '15.490.000₫',
+        giamoi: '14.390.000₫',
+        hinh:'img/lenovo-3.webp',
+        thuonghieu:'Lenovo',
+        manhinh:"14"
+    },
+    {
+        tenLap: 'Laptop Lenovo Ideapad 3 15ITL6 i5 1155G7/8GB/256GB/15.6"FHD/Win 11',
+        giacu: '13.690.000₫',
+        giamoi: '11.190.000₫',
+        hinh:'img/lenovo-4.webp',
+        thuonghieu:'Lenovo',
+        manhinh:"15.6"
+    },
+    {
+        tenLap: 'Laptop Lenovo Ideapad Gaming 3 15ARH7 R5 7535HS/8GB/512GB/15.6"FHD/Nvidia RTX 4050 6GB/Win11',
+        giacu: '25.990.000₫',
+        giamoi: '21.990.000₫',
+        hinh:'img/lenovo-5.webp',
+        thuonghieu:'Lenovo',
+        manhinh:"15.6"
+    },
+    {
+        tenLap: 'Laptop MSI Modern 14 C7M-221VN R7 7730U/8GB/512GB/14" FHD IPS/Win 11',
+        giacu: '14.490.000₫',
+        giamoi: '12.990.000₫',
+        hinh:'img/msi-1.webp',
+        thuonghieu:'Msi',
+        manhinh:"14"
+    },
+    {
+        tenLap: 'Laptop MSI Gaming GF63 Thin 11SC-664VN i5 11400H/8GB/512GB/15.6"FHD/GeForce GTX 1650 4GB/Win 11',
+        giacu: '16.490.000₫',
+        giamoi: '14.990.000₫',
+        hinh:'img/msi-2.webp',
+        thuonghieu:'Msi',
+        manhinh:"15.6"
+    },
+    {
+        tenLap: 'Laptop MSI Gaming Thin GF63 12VE-454VN i5 12450H/16GB/512GB/15.6" FHD/GeForce RTX4050_6GB/Win 11',
+        giacu: '22.990.000₫',
+        giamoi: '20.990.000₫',
+        hinh:'img/msi-3.webp',
+        thuonghieu:'Msi',
+        manhinh:"15.6"
+    },
+    {
+        tenLap: 'Laptop MSI Gaming GF63 Thin 11UC-1228VN i7-11800H/8GB/512GB/15.6"FHD/GeForce RTX3050_4GB/Win11',
+        giacu: '20.490.000₫',
+        giamoi: '18.490.000₫',
+        hinh:'img/msi-4.webp',
+        thuonghieu:'Msi',
+        manhinh:"15.6"
+    },
+    {
+        tenLap: 'Laptop MSI Modern 15 B7M-099VN R5 7530U/8GB/512GB/15.6"FHD/Win 11',
+        giacu: '12.490.000₫',
+        giamoi: '11.390.000₫',
+        hinh:'img/msi-5.webp',
+        thuonghieu:'Msi',
+        manhinh:"15.6"
+    },
+    {
+        tenLap: 'Laptop HP 245 G9 R5 5625U/8GB/256GB/14"FHD/Win11',
+        giacu: '13.090.000₫',
+        giamoi: '10.490.000₫',
+        hinh:'img/hp-1.webp',
+        thuonghieu:'Hp',
+        manhinh:"14"
+    },
+    {
+        tenLap: 'Laptop HP Pavilion Aero 13-be2098AU R7 7735U/16GB/512GB/13.3/WUXGA/Win11',
+        giacu: '21.990.000₫',
+        giamoi: '19.790.000₫',
+        hinh:'img/hp-2.webp',
+        thuonghieu:'Hp',
+        manhinh:"13.3"
+    },
+    {
+        tenLap: 'Laptop HP 14s-em0086AU R5 7520U/16GB/512GB/14FHD/AMD Radeon Graphics/Win11',
+        giacu: '15.190.000₫',
+        giamoi: '13.990.000₫',
+        hinh:'img/hp-3.webp',
+        thuonghieu:'Hp',
+        manhinh:"14"
+    },
+    {
+        tenLap: 'Laptop HP Pavilion 15-eg2083TU i5 1240P/8GB/512GB/15.6FHD/Win11',
+        giacu: '19.790.000₫',
+        giamoi: '16.490.000₫',
+        hinh:'img/hp-4.webp',
+        thuonghieu:'Hp',
+        manhinh:"15.6"
+    },
+    {
+        tenLap: 'Laptop HP Pavilion 14-dv2073TU i5 1235U/16GB/512GB/Win11',
+        giacu: '20.990.000₫',
+        giamoi: '18.190.000₫',
+        hinh:'img/hp-5.webp',
+        thuonghieu:'Hp',
+        manhinh:"14"
+    },
+    
+    ]
+</script>
+
+    
+
+<script>
+    
+    function chonLap(){
+        var arr1 = document.getElementsByClassName("thuonghieu")
+        var thuonghieuchon_arr=[]
+        for(i=0;i<arr1.length;i++)
+        {
+            if(arr1[i].checked == true)
+            {
+                thuonghieuchon_arr.push(arr1[i].value);
+            }
+
+        }
+    }
+</script>
+<script>
+    function hienLap()
+    {
+        var list1 = document.getElementById('list-sp');
+        list1.innerHTML='';
+        for(i=0;arrLap.length;i++)
+        {
+            thuonghieuLap=arrLap[i].thuonghieu;
+            giaCu=arrLap[i].giacu;
+            giaMoi=arrLap[i].giamoi;
+            manHinh=arrLap[i].manhinh;
+
+            list1.innerHTML+=`
+                <div class="laptop"> 
+                    <img src="${arrLap[i].hinh}">    
+                    <div class="mota_sanpham">
+                        <li class="tensp"><b>${arrLap[i].tenLap}</b></li>
+                        <li><b style="color: red;">${arrLap[i].giacu}</b><sup style="color: red;">₫</sup></li>
+                        <li><b style="color: red;">${arrLap[i].giamoi}</b><sup style="color: red;">₫</sup></li>
+                        <li><b style="color: red;">${arrLap[i].manhinh}</b><sup style="color: red;">₫</sup></li>
+                    </div>
+                </div>
+            `;
+        }
+    }
+    hienLap();
+</script>

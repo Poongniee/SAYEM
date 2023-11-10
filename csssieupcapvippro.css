@@ -1,0 +1,525 @@
+main{
+    background-color: #f8f9fa;
+    font-family: Roboto,Arial,Helvetica,sans-serif;
+    
+}
+.category-container {
+    width: 1200px;
+    margin: auto;
+    
+}
+.category-container>header{
+    background-color: brown;
+    height: 80px;
+}
+.category-container>.main{
+    display: flex;
+    min-height: 460px;
+    margin-top: 5px;
+    
+}
+.category-container>.main>#cottrai{
+    background-color: #f8f9fa;
+    width: 20%;
+    border-radius: 5px;
+}
+.category-container>.main>#cotphai{
+    background-color: #fff;
+    width: 80%;
+
+}
+.category-container>footer{
+    background-color: #fff;
+    height: 50px;
+    padding-top: 1px;
+    margin-top: 5px;
+}
+
+#cotphai{
+    border: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: #f0f2f3;
+}
+
+
+/* cot trai */
+
+
+#accordion>.cap  { 
+     padding: 8px 10px;
+     
+    font-weight: bold; text-transform: uppercase; 
+    cursor: pointer; 
+    color: #212529;
+    font-size: 18px;
+    padding-left: 33px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+#accordion > .ct > label {
+    margin: 8px 0 8px 30px;
+    font-size: 18px; 
+    display: block; 
+    cursor: pointer; 
+}
+#accordion > .ct input { width: 16px; height: 16px; margin-right: 10px;}
+
+/* cot phai */
+.all-list{
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+
+#list-sp{
+    display: grid;
+        grid-template-columns: 33.3% 33.3%  33.3% ;
+}
+.laptop{
+    /* width: 200px;
+            height: 300px;
+            padding: 15px; */
+            cursor: pointer;
+            padding: 10px;
+            /* text-align: center; */
+            border: 3px solid transparent;
+            border-radius: 10px;
+  transition: border-color 0.3s;
+}
+.laptop img{
+    width: 100%;
+    position: relative;
+    bottom: 10px;
+}
+.laptop:hover{
+    /* box-shadow: 3px 3px 3px 3px #ddd; */
+    border-color:#cfd2d7;
+}
+.tensp{
+    /* width: 200px;
+    height:100px;    */
+    width: 300px; /* Đặt chiều rộng của khung */
+    height: 74px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 3; /* Số dòng tối đa */
+    /* position:  relative;
+    left: 30px;
+    bottom: 30px; */
+
+    
+}
+.mota_sanpham{            
+    list-style-type: none;
+    font-size: 20px;
+    color: #48515b;
+    width: 300px;
+    height: 170px ;
+    
+}
+.mota_sanpham b:hover{
+    color: rgb(29, 99, 178);
+    transition: color 0.3s;
+}
+.gMoi{
+    font-size: 23px;
+    background-color: #cb1c22;
+    border: 15px;
+    border-color:#cb1c22 ;
+    border-radius: 15px;
+    padding: 3px 10px 3px 10px;
+}
+.gCu{
+    margin-left: 40px;
+}
+
+.order-container {
+    padding-top: 10px;
+  }
+  
+  .order-button {
+    background-color: #e55055; /* Màu nền */
+    color: white; /* Màu chữ */
+    padding: 10px 50px; /* Kích thước nút */
+    font-size: 16px;
+    border: none; /* Loại bỏ đường viền */
+    border-radius: 4px; /* Bo tròn góc */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Hiệu ứng chuyển động cho màu nền khi di chuột vào */
+  }
+  
+  .order-button:hover {
+    background-color: #cb1c22; /* Màu nền khi di chuột vào */
+  }
+  .compare-button{
+    background-color: #99a2aa; /* Màu nền */
+    color: white; /* Màu chữ */
+    padding: 10px 20px; /* Kích thước nút */
+    font-size: 16px;
+    border: none; /* Loại bỏ đường viền */
+    border-radius: 4px; /* Bo tròn góc */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Hiệu ứng chuyển động cho màu nền khi di chuột vào */
+  }
+  .compare-button:hover {
+    background-color: #72797f; /* Màu nền khi di chuột vào */
+  }
+        
+.Hienthisolapduocchon{
+    background-color: #99a2aa;
+    border-radius: 5px;
+    height: 100px;
+}         
+        /* footer */
+footer{
+    margin:0px;
+}
+
+/* maycainut */
+.top-list{
+    display: flex;
+    
+}
+.top-list>span{
+    padding-right: 10px;
+    margin-top: 10px;
+}
+.filter-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    transition: background-color 0.3s;
+  }
+
+  
+  .filter-btn:hover {
+    background-color: #939CA3;
+  }
+
+  
+  .filter-btn:active {
+    background-color: #ad2525;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+header
+{
+    background-color: greenyellow;
+    text-align: center;
+
+}
+/*-------------nav----------*/
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+nav {
+    background-color: white;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li a {
+    color: black;font-size: 20px;
+   
+}
+nav ul li:nth-child(2) a
+{
+    color:rgb(220, 111, 111) ;
+    font-size: 20px;
+}
+nav ul li:nth-child(2) i{
+    color:rgb(220, 111, 111) ;
+    font-size: 20px;
+    margin-left: 6px;
+}
+nav ul li:nth-child(3) 
+{
+    position: relative;
+}
+nav ul li:nth-child(3) input{
+    height: 30px;
+    width: 100%;
+    border-radius: 5px ;
+    border: 1px solid black;
+    padding-left: 6px;
+    outline: none;
+}
+nav ul li:nth-child(3) i{
+    position: absolute;
+    font-size: 15px;
+   right: 12px;
+   line-height: 30px;
+   cursor: pointer;
+}
+nav ul li:nth-child(4) button
+{
+    height: 30px;
+    padding: 0 12px;
+    cursor: pointer;
+    background: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: all 0.3 ease;
+}
+nav ul li:nth-child(4) button i 
+{
+    margin-right: 6px;
+}
+nav ul li:nth-child(4) button:hover
+{
+    background-color: rgb(220, 111, 111);
+}
+nav ul li:nth-child(5)
+{
+    text-align: center;
+
+}
+nav ul li:nth-child(5):hover a
+{
+    color:rgb(220, 111, 111) ;
+
+}
+nav ul li:nth-child(6):hover a
+{
+    color:rgb(220, 111, 111) ;
+
+}
+nav ul li:nth-child(7):hover a
+{
+    color:rgb(220, 111, 111) ;
+
+}
+nav ul li:nth-child(8):hover a
+{
+    color:rgb(220, 111, 111) ;
+
+}
+.adress-form {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: none;
+    z-index: 10;
+
+}
+.adress-form-content {
+    width: 500px;
+    height: 550px;
+    background-color: white;
+    border-radius: 5px;
+}
+.adress-form-content form {
+    padding: 0 40px;
+
+}
+.adress-form-content h2{                                                        
+    font-size: 14px;
+    padding: 12px 0;
+    border-bottom: 1px solid black;
+    position: relative;
+}
+.adress-form-content h2 span {
+    display: block;
+    position: absolute;
+    height: 30px;
+    padding: 0 6px;
+    border: 1px solid black;
+    right: 12px;
+    cursor: pointer;
+    top:  50%;
+    transform: translateY(-50%);
+    list-style: 30px;
+    border-radius: 5px;
+    
+}
+
+
+.adress-form-content form input, select {
+    height: 40px;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid black;
+    padding: 6px;
+    border-radius: 5px;
+}
+.adress-form-content form button {
+    margin-top: 20px;
+    height: 40px;
+    width: 80%;
+    cursor: pointer;
+    background-color: chocolate;
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+footer
+{
+    width: 100%;
+    position: absolute;
+  
+    background: linear-gradient(to right,#00093c,#2d0b00);
+    color: #fff;
+    padding: 100px 0 30px;
+    border-top-left-radius: 100px;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: sans-serif;
+    margin-top: 20px;
+}
+.row
+{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.col{
+    flex-basis: 25%;
+    padding: 8px;
+}
+.col:nth-child(2)
+{
+    flex-basis: 15%;
+}
+.logo
+{
+    
+    margin-bottom: 30px;
+    
+}
+.col h3
+{
+    width: fit-content;
+    
+    position: relative;
+}
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+footer ul li a 
+{
+    color: white;
+    padding: 5px;
+}
+.col  img{
+    width: 20%;
+}
+form
+{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+form .far
+{
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+form input
+{
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+    margin-top: 50px;
+}
+form button
+{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 50px;
+}
+form button .fas
+{
+    font-size: 16px;
+    color: #ccc;
+
+}
+.socail-icons .fa-brands
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+.underline
+{
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+}
+.underline span
+{
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top:0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+@keyframes moving
+{
+    0%{
+        left: -20px;
+    }
+    100%{
+        left: 100%;
+    }
+}
+.col:nth-child(4)
+{
+    padding: 4px;
+}

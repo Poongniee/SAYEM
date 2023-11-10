@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="csssieupcapvippro.css">
+    <title>Document</title>
+    
+</head>
+<body>
+    <header>
+        <img src="image/1.webp" alt="">
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html"><img width="130px" src="image/logo.webp " alt=""></a></li>
+                <li id="adress-form"><a href="#">HaNoi<i class="fa-solid fa-sort-down"></i></a></li>
+                <li><input type="text" placeholder="Ban dang tim gi"><i  class="fa-solid fa-magnifying-glass"></i></li>
+                <li><a href="#"></a><button><i class="fa-solid fa-cart-shopping"></i>Gio Hang</button></li>
+                <li><a href="#">Lich Su <br>Don Hang</a></li>
+                <li><a href="#">24h Cong Nghe</a></li>
+                <li><a href="#">Hoi dap</a></li>
+                <li><a href="#">Game app</a></li>
+                <div class="adress-form">
+                    <div class="adress-form-content">
+                        <h2> Chọn địa chỉ nhận hàng <span id="adress-close">X Close</span> </h2>
+                        <form action=""><p>Chọn địa chỉ để nhận hàng :</p>
+                            <select name="" >
+                                <option value="">Chọn Thành Phố</option>
+                                <option value="">Bắc Ninh</option>
+                                <option value="">TPHCM</option>
+                            </select>
+                            <select name="" >
+                                <option value="">Chọn Quận / Huyện</option>
+                                <option value="">Gia Bình</option>
+                                <option value="">Bình Tân</option>
+                            </select>
+                            <select name="" >
+                                <option value="">Chọn Phường / Xã</option>
+                                <option value="">Bình Hình Hưng Hòa</option>
+                                <option value="">15</option>
+                            </select>
+                            <input type="text" placeholder="số nhà tên đường">
+                            <button>XÁC NHẬN</button>
+                        </form>
+                    </div>
+                </div>
+    
+            </ul>
+        </div>
+    </nav>
+    
+    <main>
+        <div class="category-container">
+           
+            <div class="main">
+                <div id="cottrai">
+                    <div id="accordion">
+                        <div class="cap">Hãng sản xuất</div>
+                        <div class="ct" > 
+                            <label><input  type="checkbox" class="thuonghieu" value="Asus">Asus</label>
+                            <label><input  type="checkbox" class="thuonghieu" value="Acer">Acer</label>
+                            <label><input  type="checkbox" class="thuonghieu" value="Lenovo">Lenovo</label>
+                            <label><input  type="checkbox" class="thuonghieu" value="Msi">Msi</label>
+                            <label><input  type="checkbox" class="thuonghieu" value="Hp">Hp</label>
+                        </div>
+                        <div class="cap">mức giá</div>
+                        <div class="ct"> 
+                            <label><input type="checkbox" class="giaban" value="1">Dưới 10 triệu</label>
+                            <label><input type="checkbox" class="giaban" value="2">Từ 10 đến 15 triệu</label>
+                            <label><input type="checkbox" class="giaban" value="3">Từ 15 đến 20 triệu</label>
+                            <label><input type="checkbox" class="giaban" value="4">Trên 20 triệu</label>
+                        </div>
+                        <div class="cap">Màn hình</div>
+                        <div class="ct"> 
+                            <label><input  type="checkbox" class="manhinh" value="1">khoảng 14 inch</label>
+                            <label><input  type="checkbox" class="manhinh" value="2"> 15 inch trở lên</label>
+                        </div>
+                        </div> 
+                </div>
+                <div id="cotphai">
+
+                    
+                    <div class="all-list">
+                        <div class="top-list">
+                            <span>Uu tiên xem: </span>
+                            <div class="btn-group">
+                                <button class="filter-btn" onclick="filterByBestSelling()">Bán chạy nhất</button>
+                                <button class="filter-btn" onclick="filterByInstallment()">Trả góp 0%</button>
+                                <button class="filter-btn" onclick="filterByLowPrice()">Giá thấp</button>
+                                <button class="filter-btn" onclick="filterByHighPrice()">Giá cao</button>
+                            </div>
+                        </div>
+                        <div id="list-sp">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+         
+        </div>
+    </main>
+    <footer>
+        <div class="row">
+            
+            <div class="col">
+                <h3 style="margin-bottom: 40px;">VỀ GEARVN <div class="underline"><span></span></div></h3>
+                <p>Giới thiệu</p>
+                <p>Tuyển dụng</p>
+                <p class="email-id">Email: cskh@gearvn.com</p>
+                <h4>Gọi mua: 1800.6975 (8:00 - 21:00)</h4>
+            </div>
+            <div class="col">
+                <h3 style="margin-bottom: 40px;">CHÍNH SÁCH <div class="underline"><span></span></div></h3>
+                <ul>
+                    <li><a href="">Chính sách bảo hành</a></li>
+                    <li><a href="">Chính sách thanh toán</a></li>
+                    <li><a href="">Chính sách giao hàng</a></li>
+                    <li><a href="">Chính sách bảo mật</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>ĐƠN VỊ VẬN CHUYỂN</h3>
+                <li><img src="image/ship_2.webp" alt=""> <img src="image/ship_3.webp" alt=""> <img src="image/ship_1.webp" alt=""> <img src="image/ship_4.webp" alt=""></li>
+                <h3>CÁCH THỨC THANH TOÁN</h3>
+                <li><img src="image/pay_2.webp" alt=""> <img src="image/pay_4.webp" alt=""><img src="image/pay_7.webp" alt=""><img src="image/pay_8.webp" alt=""></li>
+            </div>
+            
+            <div class="col">
+                <h3>NewLetter <div class="underline"><span></span></div></h3>
+                <form >
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" placeholder="Enter your Email" required>
+                    <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+                <div class="socail-icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </div>  
+        <hr>
+    </footer>
+    
+</body>
+</html>
+
+<script>
+    
+    var arrLap =[
+    {
+       
+        tenLap: 'Laptop Acer Aspire 3 A315 59 321N',
+        giacu: '14.290.000đ',
+        giamoi: 11990000  ,
+        hinh:'image/lap1.webp' ,
+        thuonghieu:'Acer',
+        manhinh:"14"
+    },
+    {
+        tenLap: 'Laptop Asus Vivobook Flip TN3402YA-LZ188W R5-7530U/16GB/512GB/14" Touch/Win11',
+        giacu: '18.990.000₫',
+        giamoi: 16690000,
+        hinh:'img/asus-2.webp',
+        thuonghieu:'Asus',
+        manhinh:"14"
+    },
+    {
+        tenLap: 'Laptop Asus TUF Gaming FX506HF-HN017W i5 11400H/16GB/512GB/GeForce RTX 2050 4GB/Win11',
+        giacu: '20.990.000₫',
+        giamoi: 17990000,
+        hinh:'img/asus-3.webp',
+        thuonghieu:'Asus',
+        manhinh:"15.6"
+    },
+    {
+        tenLap: 'Laptop Asus TUF Gaming FX506HC-HN144W i5 11400H/8GB/512GB/15.6"FHD/GeForce RTX 3050 4GB/Win 11',
+        giacu: '21.990.000₫',
+        giamoi: 18290000,
+        hinh:'img/asus-4.webp',
+        thuonghieu:'Asus',
+        manhinh:"15.6"
+    },
+    {
+        tenLap: 'Laptop Asus Vivobook X415EA-EK1387W i3 1115G4/8GB/256GB/14" FHD/Win 11',
+        giacu: '10.990.000₫',
+        giamoi: 8990000,
+        hinh:'img/asus-1.webp',
+        thuonghieu:'Asus',
+        manhinh:"14"
+    },
+    {
+        tenLap: 'Laptop Acer Swift 3 SF314-43-R4X3 R5 5500U/16GB/512GB SSD/Win11',
+        giacu: '20.990.000₫',
+        giamoi: 14990000,
+        hinh:'img/acer-1.webp',
+        thuonghieu:'Acer',
+        manhinh:"14"
+    },
+    {
+        tenLap: 'Laptop Acer Nitro 5 Gaming AN515-57-53F9 i5 11400H/8GB/512GB/15.6"FHD/Nvidia RTX 3050 4GB/Win11',
+        giacu: '25.990.000₫',
+        giamoi: 19990000,
+        hinh:'img/acer-2.webp',
+        thuonghieu:'Acer',
+        manhinh:"15.6"
+    },
+    {
+        tenLap: 'Laptop Acer Aspire 7 Gaming A715-76-57CY i5 12450H/8G/512G/15.6"FHD/Win11',
+        giacu: '16.990.000₫',
+        giamoi: 13990000,
+        hinh:'img/acer-3.webp',
+        thuonghieu:'Acer',
+        manhinh:"15.6"
+    },
+    {
+        tenLap: 'Laptop Acer Aspire 7 Gaming A715-43G-R09Q R5 5625U/16GB/512GB/15.6"FHD/NVIDIA RTX3050/Win11',
+        giacu: '19.490.000₫',
+        giamoi: 17490000,
+        hinh:'img/acer-4.webp',
+        thuonghieu:'Acer',
+        manhinh:"15.6"
+    },
+    {
+        tenLap: 'Laptop Acer Nitro 5 Tiger Gaming AN515-58-52SP i5 12500H/8GB/512GB SSD/GeForce RTX 3050 4GB/Win11',
+        giacu: '27.990.000₫',
+        giamoi: 22990000,
+        hinh:'img/acer-5.webp',
+        thuonghieu:'Acer',
+        manhinh:"15.6"
+    },
+    {
+        tenLap: 'Laptop Lenovo IdeaPad 3 15ITL6 i5 1155G7/16GB/512GB/15.6"FHD/Win11',
+        giacu: '15.290.000₫',
+        giamoi: 13490000,
+        hinh:'img/lenovo-1.webp',
+        thuonghieu:'Lenovo',
+        manhinh:"15.6"
+    },
+    {
+        tenLap: 'Laptop Lenovo IdeaPad 1 15AMN7 R5 7520U/8GB/512GB/15.6"FHD/Win 11',
+        giacu: '13.490.000₫',
+        giamoi: 9990000,
+        hinh:'img/lenovo-2.webp',
+        thuonghieu:'Lenovo',
+        manhinh:"15.6"
+    },
+    {
+        tenLap: 'Laptop Lenovo IdeaPad 3 14IAH8 i5 12450H/16GB/512GB/14"FHD/Win11',
+        giacu: '15.490.000₫',
+        giamoi: 14390000,
+        hinh:'img/lenovo-3.webp',
+        thuonghieu:'Lenovo',
+        manhinh:"14"
+    },
+    {
+        tenLap: 'Laptop Lenovo Ideapad 3 15ITL6 i5 1155G7/8GB/256GB/15.6"FHD/Win 11',
+        giacu: '13.690.000₫',
+        giamoi: 11190000,
+        hinh:'img/lenovo-4.webp',
+        thuonghieu:'Lenovo',
+        manhinh:"15.6"
+    },
+    {
+        tenLap: 'Laptop Lenovo Ideapad Gaming 3 15ARH7 R5 7535HS/8GB/512GB/15.6"FHD/Nvidia RTX 4050 6GB/Win11',
+        giacu: '25.990.000₫',
+        giamoi: 21990000,
+        hinh:'img/lenovo-5.webp',
+        thuonghieu:'Lenovo',
+        manhinh:"15.6"
+    },
+    {
+        tenLap: 'Laptop MSI Modern 14 C7M-221VN R7 7730U/8GB/512GB/14" FHD IPS/Win 11',
+        giacu: '14.490.000₫',
+        giamoi: 12990000,
+        hinh:'img/msi-1.webp',
+        thuonghieu:'Msi',
+        manhinh:"14"
+    },
+    {
+        tenLap: 'Laptop MSI Gaming GF63 Thin 11SC-664VN i5 11400H/8GB/512GB/15.6"FHD/GeForce GTX 1650 4GB/Win 11',
+        giacu: '16.490.000₫',
+        giamoi: 14990000,
+        hinh:'img/msi-2.webp',
+        thuonghieu:'Msi',
+        manhinh:"15.6"
+    },
+    {
+        tenLap: 'Laptop MSI Gaming Thin GF63 12VE-454VN i5 12450H/16GB/512GB/15.6" FHD/GeForce RTX4050_6GB/Win 11',
+        giacu: '22.990.000₫',
+        giamoi: 20990000,
+        hinh:'img/msi-3.webp',
+        thuonghieu:'Msi',
+        manhinh:"15.6"
+    },
+    {
+        tenLap: 'Laptop MSI Gaming GF63 Thin 11UC-1228VN i7-11800H/8GB/512GB/15.6"FHD/GeForce RTX3050_4GB/Win11',
+        giacu: '20.490.000₫',
+        giamoi: 18490000,
+        hinh:'img/msi-4.webp',
+        thuonghieu:'Msi',
+        manhinh:"15.6"
+    },
+    {
+        tenLap: 'Laptop MSI Modern 15 B7M-099VN R5 7530U/8GB/512GB/15.6"FHD/Win 11',
+        giacu: '12.490.000₫',
+        giamoi: 11390000,
+        hinh:'img/msi-5.webp',
+        thuonghieu:'Msi',
+        manhinh:"15.6"
+    },
+    {
+        tenLap: 'Laptop HP 245 G9 R5 5625U/8GB/256GB/14"FHD/Win11',
+        giacu: '13.090.000₫',
+        giamoi: 10490000,
+        hinh:'img/hp-1.webp',
+        thuonghieu:'Hp',
+        manhinh:"14"
+    },
+    {
+        tenLap: 'Laptop HP Pavilion Aero 13-be2098AU R7 7735U/16GB/512GB/13.3/WUXGA/Win11',
+        giacu: '21.990.000₫',
+        giamoi: 19790000,
+        hinh:'img/hp-2.webp',
+        thuonghieu:'Hp',
+        manhinh:"13.3"
+    },
+    {
+        tenLap: 'Laptop HP 14s-em0086AU R5 7520U/16GB/512GB/14FHD/AMD Radeon Graphics/Win11',
+        giacu: '15.190.000₫',
+        giamoi: 13990000,
+        hinh:'img/hp-3.webp',
+        thuonghieu:'Hp',
+        manhinh:"14"
+    },
+    {
+        tenLap: 'Laptop HP Pavilion 15-eg2083TU i5 1240P/8GB/512GB/15.6FHD/Win11',
+        giacu: '19.790.000₫',
+        giamoi: 16490000,
+        hinh:'img/hp-4.webp',
+        thuonghieu:'Hp',
+        manhinh:"15.6"
+    },
+    {
+        tenLap: 'Laptop HP Pavilion 14-dv2073TU i5 1235U/16GB/512GB/Win11',
+        giacu: '20.990.000₫',
+        giamoi: 18190000,
+        hinh:'img/hp-5.webp',
+        thuonghieu:'Hp',
+        manhinh:"14"
+    },
+    
+    
+    ]
+</script>
+
+    
+
+<script>
+    
+    function chonLap(){ 
+
+        var arr1 = document.getElementsByClassName("thuonghieu")
+        var thuonghieuchon_arr=[]
+        for(i=0;i<arr1.length;i++)
+        {
+            if(arr1[i].checked == true)
+            {
+                thuonghieuchon_arr.push(arr1[i].value);
+            }
+        }
+
+        var arr2= document.getElementsByClassName("giaban")
+        var giaban_arr=[];
+        for(i=0;i<arr2.length;i++)
+        {
+            if (arr2[i].checked==true)
+            {
+                giaban_arr.push(arr2[i].value);
+            }
+        }
+
+        var arr3= document.getElementsByClassName("manhinh")
+        var manhinh_arr=[]
+        for(i=0;i<arr3.length;i++)
+        {
+            if (arr3[i].checked==true)
+            {
+                manhinh_arr.push(arr3[i].value);
+            }
+        }
+
+        hienLap(thuonghieuchon_arr,giaban_arr,manhinh_arr);
+    }
+</script>
+<script>
+    function hienLap(thuonghieuchon_arr=[], giaban_arr=[],manhinh_arr=[])
+    {
+
+        var soLapdh=0;
+
+        var list1 = document.getElementById('list-sp');
+        list1.innerHTML='';
+        for(i=0;arrLap.length;i++)
+        {
+            thuonghieuLap=arrLap[i].thuonghieu;
+            giaCu=arrLap[i].giacu;
+            giaMoi=arrLap[i].giamoi;
+            manHinhLap=arrLap[i].manhinh;
+            
+
+            //loc theo thuong hieu
+            if(thuonghieuchon_arr.length>0)
+            {
+                if(thuonghieuchon_arr.includes(thuonghieuLap)==false)
+                {continue;}
+            }
+            //loc theo gia
+            if(giaban_arr.length>0)
+            {
+                if(giaMoi<10000000 && giaban_arr.includes('1')==false)
+                {continue;}
+                if(giaMoi >=10000000 && arrLap[i].giamoi< 15000000 && giaban_arr.includes('2')==false)
+                {continue;}
+                if(giaMoi >=15000000 && arrLap[i].giamoi< 20000000 && giaban_arr.includes('3')==false)
+                {continue;}
+                if(giaMoi >=20000000 && giaban_arr.includes('4')==false)
+                {continue;}
+            }
+            //loc theo man
+            if(manhinh_arr.length>0)
+            {
+                if(Number(manHinhLap)<=14 && manhinh_arr.includes('1')==false)
+                {continue;}
+                if(Number(manHinhLap)>14 && manhinh_arr.includes('2')==false)
+                {continue;}
+            }
+
+            soLapdh++;
+
+            list1.innerHTML+=`
+                <div class="laptop" > 
+                    <img src="${arrLap[i].hinh}">    
+                    <div class="mota_sanpham" >
+                        <li class="tensp"><b>${arrLap[i].tenLap}</b></li>
+                        <li><b class="gMoi" style="color: white;">${arrLap[i].giamoi}₫</b><b class="gCu"><del>${arrLap[i].giacu}</del></b></li>
+                        <div class="order-container" >
+                            <button class="order-button">Đặt Hàng</button>
+                            <button class="compare-button">So Sánh</button>
+                        </div>
+                        
+                    </div>
+                </div>
+            `;
+        }
+        document.getElementById('soLapduochien').innerHTML= `${soLapdh} sản phẩm`;
+    }
+    hienLap();
+</script>
+<script>
+    arr = document.querySelectorAll('#accordion input');
+    for(i=0;i<arr.length;i++)
+    {
+        arr[i].addEventListener("change",chonLap);  
+    }
+</script>
+
+
+<!-- cac nut -->
+<script>
+    function filterByBestSelling() {
+      
+    }
+
+    function filterByInstallment() {
+      
+    }
+
+    function filterByLowPrice() {
+      
+    }
+
+    function filterByHighPrice() {
+      
+    }
+  </script>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        .khungsanpham
+        {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+        }
+        /* .product-gallery-one-content-product-item
+        {
+            width: 20%;
+            padding: 50px 12px 12px;
+            border: 1px solid rgb(195, 195, 195);
+            cursor: pointer;
+        } */
+        .sanpham
+        {
+            width: 200px;
+            height: 300px;
+            padding: 15px;
+            
+            border: 1px solid #ddd;
+             
+        }
+        
+        .sanpham img
+        {
+            width: 100%;
+        }
+        .sanpham:hover
+        {
+            box-shadow: 3px 3px 3px  #ddd;
+        }
+        .mota_sanpham{            
+            list-style-type: none;
+            text-align: center;
+        }
+        .mota_sanpham b:hover{
+            color: red;
+            transition: color 0.3s;
+        }
+        .tensp{
+            width: 200px;
+            height: 70px;
+            border: 1px solid transparent;
+            background-color: rgb(255, 255, 255);
+            
+        }
+        .container h1{
+            display: flex;
+
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            background-color: #4c534d; 
+            color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 5px;
+            transition: background-color 0.3s ease; 
+        }
+
+        .button:hover {
+            background-color: #f69c4e; 
+        }
+        .tab{
+            text-align: center;
+            background-color: #b4733b;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .tab-name{
+            margin-right: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <ul class="tab">
+            <a class="tab-name"> danh sách sp</a>
+            <a href="#" class="button popular">Phổ biến</a>
+            <a href="#" class="button best-seller">Bán chạy</a>
+            <a href="#" class="button new">Mới nhất</a>
+        </ul>
+        <div class=""></div>
+    </div>
+    
+    <div class="khungsanpham">
+        <div class="sanpham">
+            <img src="/img/01.webp" alt="">
+                        <div class="mota_sanpham">
+                           <li class="tensp"><b>PC Gaming STAR Project One Plus 12.12.32 | RTX 3060, AMD</b></li>
+                           <li><b style="color: red;">2,090,000₫</b><sup style="color: red;">₫</sup></li>
+                        </div>      
+        </div>
+        <div class="sanpham">
+            <img src="/img/02.webp" alt="">
+                        <div class="mota_sanpham">
+                           <li class="tensp"><b>PC Gaming STAR Project Five 16.16.32 | RTX 4060Ti, AMD</b></li>
+                           <li><b style="color: red;"> 9,990,000₫ </b><sup style="color: red;">₫</sup></li>
+                        </div>      
+        </div>
+        <div class="sanpham">
+            <img src="/img/03.webp" alt="">
+                        <div class="mota_sanpham">
+                           <li class="tensp"><b> PC Gaming STAR CHICKEN AKIRA | RTX 3050, Intel  </b></li>
+                           <li><b style="color: red;"> 9,990,000₫ </b><sup style="color: red;">₫</sup></li>
+                        </div>      
+        </div>
+        <div class="sanpham">
+            <img src="/img/04.webp" alt="">
+                        <div class="mota_sanpham">
+                           <li class="tensp"><b> PC Gaming STAR CHICKEN AKIRA | RTX 3050, Intel </b></li>
+                           <li><b style="color: red;"> 9,990,000₫ </b><sup style="color: red;">₫</sup></li>
+                        </div>      
+        </div>
+        <div class="sanpham">
+            <img src="/img/05.webp" alt="">
+                        <div class="mota_sanpham">
+                           <li class="tensp"><b>PC Gaming STAR CHICKEN RYZEN | GTX 1660S, AMD</b></li>
+                           <li><b style="color: red;"> 9,990,000₫ </b><sup style="color: red;">₫</sup></li>
+                        </div>      
+        </div>
+        <div class="sanpham">
+            <img src="/img/06.webp" alt="">
+                        <div class="mota_sanpham">
+                           <li class="tensp"><b>PC Gaming STAR CHICKEN RAPTOR | RTX 4060TI, Intel</b></li>
+                           <li><b style="color: red;"> 9,990,000₫ </b><sup style="color: red;">₫</sup></li>
+                        </div>      
+        </div>
+        <div class="sanpham">
+            <img src="/img/07.webp" alt="">
+                        <div class="mota_sanpham">
+                           <li class="tensp"><b> PC Gaming STAR CHICKEN HORSEM4N | RTX 3070, Intel  </b></li>
+                           <li><b style="color: red;"> 9,990,000₫ </b><sup style="color: red;">₫</sup></li>
+                        </div>      
+        </div>
+        <div class="sanpham">
+            <img src="/img/08.webp" alt="">
+                        <div class="mota_sanpham">
+                           <li class="tensp"><b>PC Gaming STAR CHICKEN AQUA | RTX 3060TI, Intel</b></li>
+                           <li><b style="color: red;"> 9,990,000₫ </b><sup style="color: red;">₫</sup></li>
+                        </div>      
+        </div>
+        <div class="sanpham">
+            <img src="/img/09.webp" alt="">
+                        <div class="mota_sanpham">
+                           <li class="tensp"><b>PC Gaming STAR CHICKEN MAGIC | RTX 4060, Intel </b></li>
+                           <li><b style="color: red;"> 9,990,000₫ </b><sup style="color: red;">₫</sup></li>
+                        </div>      
+        </div>
+        <div class="sanpham">
+            <img src="/img/010.webp" alt="">
+                        <div class="mota_sanpham">
+                           <li class="tensp"><b> PC Gaming STAR CHICKEN MAGIC | RTX 4060, Intel</b></li>
+                           <li><b style="color: red;"> 9,990,000₫ </b><sup style="color: red;">₫</sup></li>
+                        </div>      
+        </div>
+        <div class="sanpham">
+            <img src="/img/01.webp" alt="">
+                        <div class="mota_sanpham">
+                           <li class="tensp"><b> PC Gaming STAR Project One Plus 12.12.32 | RTX 3060, AMD </b></li>
+                           <li><b style="color: red;"> 9,990,000₫ </b><sup style="color: red;">₫</sup></li>
+                        </div>      
+        </div>
+        <div class="sanpham">
+            <img src="/img/02.webp" alt="">
+                        <div class="mota_sanpham">
+                           <li class="tensp"><b>PC Gaming STAR Project Five 16.16.32 | RTX 4060Ti, AMD</b></li>
+                           <li><b style="color: red;"> 9,990,000₫ </b><sup style="color: red;">₫</sup></li>
+                        </div>      
+        </div>
+        <div class="sanpham">
+            <img src="/img/03.webp" alt="">
+                        <div class="mota_sanpham">
+                           <li class="tensp"><b>PC Gaming STAR CHICKEN MAGIC | RTX 4060, Intel </b></li>
+                           <li><b style="color: red;"> 9,990,000₫ </b><sup style="color: red;">₫</sup></li>
+                        </div>      
+        </div>
+        <div class="sanpham">
+            <img src="/img/04.webp" alt="">
+                        <div class="mota_sanpham">
+                           <li class="tensp"><b> PC Gaming STAR CHICKEN HORSEM4N | RTX 3070, Intel </b></li>
+                           <li><b style="color: red;"> 9,990,000₫ </b><sup style="color: red;">₫</sup></li>
+                        </div>      
+        </div>
+        <div class="sanpham">
+            <img src="/img/05.webp" alt="">
+                        <div class="mota_sanpham">
+                           <li class="tensp"><b> PC Gaming STAR CHICKEN MAGIC | RTX 4060, Intel </b></li>
+                           <li><b style="color: red;"> 9,990,000₫ </b><sup style="color: red;">₫</sup></li>
+                        </div>      
+        </div>
+        <div class="sanpham">
+            <img src="/img/06.webp" alt="">
+                        <div class="mota_sanpham">
+                           <li class="tensp"><b> PC Gaming STAR CHICKEN HORSEM4N | RTX 3070, Intel  </b></li>
+                           <li><b style="color: red;"> 9,990,000₫ </b><sup style="color: red;">₫</sup></li>
+                        </div>      
+        </div>
+        <div class="sanpham">
+            <img src="/img/07.webp" alt="">
+                        <div class="mota_sanpham">
+                           <li class="tensp"><b> PC Gaming STAR CHICKEN HORSEM4N | RTX 3070, Intel  </b></li>
+                           <li><b style="color: red;"> 9,990,000₫ </b><sup style="color: red;">₫</sup></li>
+                        </div>      
+        </div>
+        <div class="sanpham">
+            <img src="/img/08.webp" alt="">
+                        <div class="mota_sanpham">
+                           <li class="tensp"><b>PC Gaming STAR CHICKEN MAGIC | RTX 4060, Intel </b></li>
+                           <li><b style="color: red;"> 9,990,000₫ </b><sup style="color: red;">₫</sup></li>
+                        </div>      
+        </div>
+        <div class="sanpham">
+            <img src="/img/09.webp" alt="">
+                        <div class="mota_sanpham">
+                           <li class="tensp"><b>PC Gaming STAR CHICKEN HORSEM4N | RTX 3070, Intel </b></li>
+                           <li><b style="color: red;"> 9,990,000₫ </b><sup style="color: red;">₫</sup></li>
+                        </div>      
+        </div>
+        <div class="sanpham">
+            <img src="/img/010.webp" alt="">
+                        <div class="mota_sanpham">
+                           <li class="tensp"><b> PC Gaming STAR CHICKEN MAGIC | RTX 4060, Intel</b></li>
+                           <li><b style="color: red;"> 9,990,000₫ </b><sup style="color: red;">₫</sup></li>
+                        </div>      
+        </div>
+        <div class="sanpham">
+            <img src="/img/01.webp" alt="">
+                        <div class="mota_sanpham">
+                           <li class="tensp"><b> PC Gaming STAR Project One Plus 12.12.32 | RTX 3060, AMD </b></li>
+                           <li><b style="color: red;"> 9,990,000₫ </b><sup style="color: red;">₫</sup></li>
+                        </div>      
+        </div>
+        <div class="sanpham">
+            <img src="/img/02.webp" alt="">
+                        <div class="mota_sanpham">
+                           <li class="tensp"><b> PC Gaming STAR Project Five 16.16.32 | RTX 4060Ti, AMD </b></li>
+                           <li><b style="color: red;"> 9,990,000₫ </b><sup style="color: red;">₫</sup></li>
+                        </div>      
+        </div>
+        <div class="sanpham">
+            <img src="/img/03.webp" alt="">
+                        <div class="mota_sanpham">
+                           <li class="tensp"><b>PC Gaming STAR CHICKEN RYZEN | GTX 1660S, AMD</b></li>
+                           <li><b style="color: red;"> 9,990,000₫ </b><sup style="color: red;">₫</sup></li>
+                        </div>      
+        </div>
+        <div class="sanpham">
+            <img src="/img/04.webp" alt="">
+                        <div class="mota_sanpham">
+                           <li class="tensp"><b>PC Gaming STAR CHICKEN MAGIC | RTX 4060, Intel</b></li>
+                           <li><b style="color: red;"> 9,990,000₫ </b><sup style="color: red;">₫</sup></li>
+                        </div>      
+        </div>
+        <div class="sanpham">
+            <img src="/img/05.webp" alt="">
+                        <div class="mota_sanpham">
+                           <li class="tensp"><b>PC Gaming STAR CHICKEN RYZEN | GTX 1660S, AMD </b></li>
+                           <li><b style="color: red;"> 9,990,000₫ </b><sup style="color: red;">₫</sup></li>
+                        </div>      
+        </div>
+        <div class="sanpham">
+            <img src="/img/06.webp" alt="">
+                        <div class="mota_sanpham">
+                           <li class="tensp"><b>PC Gaming STAR CHICKEN RYZEN | GTX 1660S, AMD</b></li>
+                           <li><b style="color: red;"> 9,990,000₫ </b><sup style="color: red;">₫</sup></li>
+                        </div>      
+        </div>
+        <div class="sanpham">
+            <img src="/img/07.webp" alt="">
+                        <div class="mota_sanpham">
+                           <li class="tensp"><b> LLaptop Asus TUF Gaming F15 FX506HF HN014W </b></li>
+                           <li><b style="color: red;"> 9,990,000₫ </b><sup style="color: red;">₫</sup></li>
+                        </div>      
+        </div>
+        <div class="sanpham">
+            <img src="/img/08.webp" alt="">
+                        <div class="mota_sanpham">
+                           <li class="tensp"><b>PC Gaming STAR CHICKEN MAGIC | RTX 4060, Intel </b></li>
+                           <li><b style="color: red;"> 9,990,000₫ </b><sup style="color: red;">₫</sup></li>
+                        </div>      
+        </div>
+        <div class="sanpham">
+            <img src="/img/09.webp" alt="">
+                        <div class="mota_sanpham">
+                           <li class="tensp"><b>PC Gaming STAR CHICKEN RAPTOR | RTX 4060TI, Intel</b></li>
+                           <li><b style="color: red;"> 9,990,000₫ </b><sup style="color: red;">₫</sup></li>
+                        </div>      
+        </div>
+        <div class="sanpham">
+            <img src="/img/010.webp" alt="">
+                        <div class="mota_sanpham">
+                           <li class="tensp"><b>PC Gaming STAR CHICKEN RAPTOR | RTX 4060TI, Intel</b></li>
+                           <li><b style="color: red;"> 9,990,000₫ </b><sup style="color: red;">₫</sup></li>
+                        </div>      
+        </div>
+        <div class="sanpham">
+            <img src="/img/01.webp" alt="">
+                        <div class="mota_sanpham">
+                           <li class="tensp"><b> PC Gaming STAR Project One Plus 12.12.32 | RTX 3060, AMD </b></li>
+                           <li><b style="color: red;"> 9,990,000₫ </b><sup style="color: red;">₫</sup></li>
+                        </div>      
+        </div>
+        <div class="sanpham">
+            <img src="/img/02.webp" alt="">
+                        <div class="mota_sanpham">
+                           <li class="tensp"><b>PC Gaming STAR CHICKEN MAGIC | RTX 4060, Intel</b></li>
+                           <li><b style="color: red;"> 9,990,000₫ </b><sup style="color: red;">₫</sup></li>
+                        </div>      
+        </div>
+        <div class="sanpham">
+            <img src="/img/03.webp" alt="">
+                        <div class="mota_sanpham">
+                           <li class="tensp"><b> PC Gaming STAR CHICKEN RYZEN | GTX 1660S, AMD </b></li>
+                           <li><b style="color: red;"> 9,990,000₫ </b><sup style="color: red;">₫</sup></li>
+                        </div>      
+        </div>
+        <div class="sanpham">
+            <img src="/img/04.webp" alt="">
+                        <div class="mota_sanpham">
+                           <li class="tensp"><b> PC Gaming STAR CHICKEN RAPTOR | RTX 4060TI, Intel</b></li>
+                           <li><b style="color: red;"> 9,990,000₫ </b><sup style="color: red;">₫</sup></li>
+                        </div>      
+        </div>
+        <div class="sanpham">
+            <img src="/img/05.webp" alt="">
+                        <div class="mota_sanpham">
+                           <li class="tensp"><b> PC Gaming STAR CHICKEN MAGIC | RTX 4060, Intel</b></li>
+                           <li><b style="color: red;"> 9,990,000₫ </b><sup style="color: red;">₫</sup></li>
+                        </div>      
+        </div>
+    </div>
+    
+</body>
+</html>
